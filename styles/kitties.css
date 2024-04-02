@@ -1,4 +1,69 @@
 
+.wrapper {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  border: 2px dotted #999;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.header {
+  grid-column: 1 / 13;
+  grid-row: 1;
+}
+
+.footer {
+  grid-column: 1 / span 12;
+  background-color: #3a3a3a;
+  color: white;
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.three {
+  grid-column: 9 / span 2;
+  grid-row: 2 / 4;
+}
+
+.three-zero {
+  grid-column: 9 / span 2;
+  grid-row: 4 / 7;
+}
+
+.three-one {
+  grid-column: 1 / span 12;
+  grid-row: 2;
+  text-align: center;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.four-one {
+  grid-column: 1 / span 12;
+  grid-row: 3;
+  text-align: center;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+}
+
 
 .roboto-regular {
     font-family: "Roboto", sans-serif;
@@ -8,16 +73,8 @@
 
   h3 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-
-  aside {
-      display: block;
-      width: 20%;
-      margin: 0 150px 30px;
-      float: right;
-      font-family: 'Work Sans', sans-serif;   
-    }
 
   figure {
     justify-content: flex-end;
@@ -28,21 +85,7 @@
     color:#4fabc3;
   }
 
-  .footerimage {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;   
-    align-items: center;
-    position: relative;
-    padding-top: 10px;
-    bottom: 5px;
-    height: auto;
-    width: 100%;
-    background-color: #3a3a3a;
-    color: white;
-    text-align: center;
-  }
+
 
 
   .container {
@@ -54,8 +97,8 @@
     text-align: center;
   }
 
-  article {text-align: center;}
-  .center {text-align: center;}
+  .center {text-align: center;
+  width: 100%}
 
     ul {
         margin: 50px 360px;
@@ -80,12 +123,6 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
-    .portfolio {
-      font-size: 32px;
-      color:rgb(23, 0, 100);
-      font-weight: bold;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     }
 
      nav {
       text-align: center;
@@ -97,12 +134,12 @@
     }
     
     nav ul li {
-      float: left;
-      margin-right: 1.5em;
+      float: center;
+      margin-right: 3em;
     }
   
     nav ul li a {
-      padding: 0.25em 1em;
+      padding: 0.9em 1.5em;
       text-decoration: none; /* no underline */
       background-color: rgb(0, 92, 128); /*fallback color*/
       background-color: rgba(3, 163, 223, .5); 
