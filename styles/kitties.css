@@ -256,7 +256,7 @@ body {font-family: Verdana, sans-serif;}
     grid-column: 3 / span 4;
     grid-row: 2;
     padding: 70px 25px;
-    width: 17rem;
+    width: 40rem;
     background: #4e93a2;
     text-align: center;
   }
@@ -295,7 +295,7 @@ body {font-family: Verdana, sans-serif;}
     grid-column: 3 / span 4;
     grid-row: 3 / 6;
     padding: 70px 25px;
-    width: 17rem;
+    width: 40rem;
     background: white;
     text-align: center;
     padding: 10px;
