@@ -1,3 +1,8 @@
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+
 
 .wrapper {
   display: grid;
@@ -110,11 +115,19 @@
   overflow: hidden;
 }
 
+.two {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  width: 350px;
+}
+
 .three {
   grid-column: 10 / span 2;
   grid-row: 2 / 4;
   width: 350px;
 }
+
+
 
 .sidebar-cat {
   width: 350px;
@@ -240,11 +253,59 @@
 
     figure {align-content: center;
    }
-
-
-   .two {
-    grid-column: 3 / span 5;
-    grid-row: 2 / 5;
+  
+  .month {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    padding: 70px 25px;
+    width: 17rem;
+    background: #4e93a2;
+    text-align: center;
+  }
+  
+  .month ul {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .month .prev {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {    
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    float: right;
+    padding-top: 10px;
   }
 
+  .table {
+    grid-column: 1 / span 4;
+    grid-row: 3 / 6;
+    padding: 70px 25px;
+    width: 17rem;
+    background: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .days tr td .active {
+    padding: 5px;
+    background: #4e93a2;
+    color: white !important
+  }
 
