@@ -1,4 +1,4 @@
-* {box-sizing: border-box;}
+
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
@@ -6,9 +6,7 @@ body {font-family: Verdana, sans-serif;}
 
 .wrapper {
   display: grid;
-  gap: 1em;
   margin: 0 auto 0;
-  box-sizing: border-box;
   border-radius: 10px;
 }
 
@@ -35,7 +33,7 @@ body {font-family: Verdana, sans-serif;}
   border-radius: 4px;
 }
 
-.header a.logo {
+.header .logo {
   font-size: 25px;
   font-weight: bold;
 }
@@ -99,7 +97,6 @@ body {font-family: Verdana, sans-serif;}
   width: 100%;
   height: auto;
   text-align: left; 
-  padding-left: 5px;
   padding-top: 30px;
   color: white;
 }
@@ -122,7 +119,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .three {
-  grid-column: 9 / span 2;
+  grid-column: 10 / span 2;
   grid-row: 2 / 4;
   width: 30%;
 }
@@ -134,9 +131,9 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .four {
-  grid-column: 9 / span 2;
+  grid-column: 10 / span 2;
   grid-row: 4 / 7;
-  width: 30%S;
+  width: 30%;
 }
 
 .five {
@@ -232,7 +229,7 @@ body {font-family: Verdana, sans-serif;}
     }
     
     nav ul li {
-      float: center;
+      float: left;
       margin-right: 3em;
     }
   
@@ -257,8 +254,7 @@ body {font-family: Verdana, sans-serif;}
   .month {
     grid-column: 3 / span 4;
     grid-row: 2;
-    padding: 70px 25px;
-    width: 100%;
+    width: 90%;
     background: #4e93a2;
     text-align: center;
   }
@@ -296,16 +292,14 @@ body {font-family: Verdana, sans-serif;}
   .table {
     grid-column: 3 / span 4;
     grid-row: 3 / 6;
-    padding: 70px 25px;
-    width: 100%;
+    width: 90%;
     background: white;
     text-align: center;
-    padding: 10px;
   }
 
   .days tr td .active {
     padding: 5px;
     background: #4e93a2;
-    color: white !important
+    color: white 
   }
 
