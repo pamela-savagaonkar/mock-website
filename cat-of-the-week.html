@@ -13,28 +13,34 @@
 
 <body>
 <div class="wrapper">
-<div class="header">
-<header>
+    <div class="header"> <img class="cat-logo" src="images/cat-logo-grey.png" alt="company logo of a grey cat peeking around a corner">
+        <header>
+        <nav>
+            <ul class="header-right">
+            <li><a href="index.html">Home <i class="fa-solid fa-cat"></i></a></li>
+            <li><a href="about-us.html">About Us <i class="fa-solid fa-paw"></i></a></li>
+            <li><a href="location.html">Location <i class="fa-solid fa-calendar-check"></i></a></li>
+            </ul>
+        </nav>
+        </header>
+    </div>
+    
 
-    <nav>
-        <ul>
-        <li><a href="index.html">Home<i class="fa-solid fa-cat"></i></a></li>
-        </ul>
-    </nav>
-
-
-</header>
-</div>
-
-<div class="three-one">
+<div class="five">
     <h3>Featured Cat of the Week!</h3>
-    <figure class="center">
-        <img src="https://live.staticflickr.com/51/164785542_4ab59feb4f_b.jpg" alt="grumpy looking cat" style="width:10%">
+    <figure>
+        <img 
+        src="images/grumpy-cat-300.jpg" 
+        srcset="images/grumpy-cat-300.jpg 300w,
+        images/grumpy-cat-original.jpg 600w"
+        sizes="(max-width: 760px) 50vw, (max-width: 1200px) 30vw,
+            15vw"
+        alt="grumpy looking cat">
         <figcaption>Meet Freddy!</figcaption>
       </figure>
 </div>
 
-<section class="four-one"><h2>Adopt a Kitty</h2>
+<section class="six"><h2>Adopt a Kitty</h2>
     <article>
     <h2>View more cats available for adoption</h2>
     <p>Add a friendly feline to your pack.<span class="sr-only">these links open a new tab</span></p>
@@ -48,14 +54,14 @@
     </ul>
 </section>
 
-<div class="footer">
-    <footer>
-        <img src="images/lesson04-mock5-cat-logo.png" alt="cat logo">
-        <p>There is random text here for now. Lorem ipsen repeating</p>
-        <p>Footer link 1 / Footer link 2 / Footer link 3 / Footer link 4</p>
-        <p>© 2018 Kitties To Go!, LLC | Seattle, WA</p>
-    </footer>
+<footer class="footer">
+    <div class="image-overlay">
+        <img class="cat-logo" src="images/cat-logo.png" alt="cat logo">
+        <p>Finding great homes for cats, and providing their humans resources since 2024.</p>
+        <p>Careers / Contact / Terms </p>
+        <p>© 2024 Kitties To Go!, LLC | Seattle, WA</p>
     </div>
+    </footer>
 </div>
 </body>
 
