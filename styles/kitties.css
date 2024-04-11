@@ -129,7 +129,6 @@ body {font-family: Verdana, sans-serif;}
 .three {
   grid-column: 10 / span 2;
   grid-row: 2 / 4;
-  width: 30%;
 }
 
 
@@ -141,7 +140,6 @@ body {font-family: Verdana, sans-serif;}
 .four {
   grid-column: 10 / span 2;
   grid-row: 4 / 7;
-  width: 30%;
 }
 
 .five {
