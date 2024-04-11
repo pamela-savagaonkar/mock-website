@@ -12,8 +12,8 @@ body {font-family: Verdana, sans-serif;}
 
 .header {
   grid-column: 1 / span 12;
-  width: auto;
-  height: auto; 
+  width: 100%;
+  height: 400px; 
   background-position: top;
   background-size: cover;
   background-image: url(../images/lesson04-mock2-banner-image.jpg);
@@ -50,6 +50,7 @@ body {font-family: Verdana, sans-serif;}
 
 .header-right {
   float: right;
+  top: -100px;
 }
 
 .video1 {
@@ -58,9 +59,12 @@ body {font-family: Verdana, sans-serif;}
   width: 70%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
   .header a {
-    float: none;
+    position: relative;
+    top: -150px;
+    right: 0;
+    left: 0;
     display: block;
     text-align: left;
   }
@@ -68,6 +72,7 @@ body {font-family: Verdana, sans-serif;}
   .header-right {
     float: none;
   }}
+
 
 
   @media (min-width: 600px) {
@@ -218,7 +223,6 @@ body {font-family: Verdana, sans-serif;}
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
-
      nav {
       text-align: center;
     }
@@ -250,7 +254,8 @@ body {font-family: Verdana, sans-serif;}
 
     figure {align-content: center;
    }
-  
+
+
   .month {
     grid-column: 3 / span 4;
     grid-row: 2;
@@ -292,6 +297,7 @@ body {font-family: Verdana, sans-serif;}
   .table {
     grid-column: 3 / span 4;
     grid-row: 3 / 6;
+    padding: 70px 25px;
     width: 90%;
     background: white;
     text-align: center;
