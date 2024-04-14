@@ -75,7 +75,7 @@ body {font-family: Verdana, sans-serif;}
 
 
 
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .responsive-img {
       width: 600px;
     }
@@ -84,6 +84,34 @@ body {font-family: Verdana, sans-serif;}
       float: none;
     }}
 
+
+    @media screen and (max-width: 600px) {
+      table {
+        width: 200px;
+      }
+      
+      .month {
+        width: 500px;
+      }
+      .days {
+        width: 500px;
+      }
+
+      .active {
+        width: 500px;
+      }
+    }
+
+@media screen and (max-width: 600px)
+{
+  .three {
+    display: none
+  }
+
+  .four {
+    display: none
+  }
+}
 
 
 
@@ -120,9 +148,7 @@ body {font-family: Verdana, sans-serif;}
   overflow: hidden;
 }
 
-.table-body {
-  width: 80%
-}
+
 
 .three {
   grid-column: 10 / span 2;
@@ -151,6 +177,14 @@ body {font-family: Verdana, sans-serif;}
   grid-column: 1 / span 12;
   grid-row: 3;
   text-align: center;
+  align-content: center;
+}
+
+.six-8 {
+  grid-column: 1 / span 12;
+  grid-row: 7;
+  text-align: center;
+  align-content: center;
 }
 
 .five-linear-gradient {
@@ -215,7 +249,7 @@ body {font-family: Verdana, sans-serif;}
     ul li a img {
         width: 250px;
         height: 175px;
-        display: block;
+        display: inline-block;
     }
     ul li a:hover img {
         transform: scale(1.2);
@@ -256,22 +290,22 @@ body {font-family: Verdana, sans-serif;}
 
 
   .month {
-    grid-column: 3 / span 4;
+    grid-column: 3 / auto;
     grid-row: 2;
-    width: 90%;
+    width: 300px;
     background: #4e93a2;
     text-align: center;
   }
   
   .month ul {
-    grid-column: 3 / span 4;
+    grid-column: 3 / auto;
     grid-row: 2;
     margin: 0;
     padding: 0;
   }
   
   .month ul li {
-    grid-column: 3 / span 4;
+    grid-column: 3 / auto;
     grid-row: 2;
     color: white;
     font-size: 20px;
@@ -280,26 +314,34 @@ body {font-family: Verdana, sans-serif;}
   }
   
   .month .prev {
-    grid-column: 3 / span 4;
+    grid-column: 3 / auto;
     grid-row: 2;
     float: left;
     padding-top: 10px;
   }
   
   .month .next {    
-    grid-column: 3 / span 4;
+    grid-column: 3 / auto;
     grid-row: 2;
     float: right;
     padding-top: 10px;
   }
 
-  .table {
-    grid-column: 3 / span 4;
-    grid-row: 3 / 6;
-    padding: 70px 25px;
-    width: 90%;
+
+
+  table {
+    border-collapse: collapse;
     background: white;
+    grid-column: 3 / auto;
+    grid-row: 3 / auto;
+    padding: 70px 25px;
+    width: 100%;
     text-align: center;
+  }
+
+  th {
+    text-align: left;
+    padding: 8px;
   }
 
   .days tr td .active {
