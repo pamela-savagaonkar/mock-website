@@ -102,15 +102,12 @@ body {font-family: Verdana, sans-serif;}
       }
     }
 
-@media screen and (max-width: 600px)
-{
-  .three {
-    display: none
-  }
 
+@media all and (max-width: 800px) {
+  .three {
+    display: none;}
   .four {
-    display: none
-  }
+    display: none;}
 }
 
 
