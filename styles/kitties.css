@@ -141,23 +141,6 @@ body {font-family: Verdana, sans-serif;}
   background: linear-gradient(to left, rgb(78, 147, 162), white);
 }
 
-/*
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-/*
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-*/
-
-
 /*PRINT CODE*/
   @media print {
     body {
@@ -171,30 +154,29 @@ body {font-family: Verdana, sans-serif;}
 
     .three
 
-  {grid-row: 1;
+  {grid-row: 2;
 
   }
 
   .four {
-    grid-row: 2;
+    grid-row: 3;
 
   }
-    .banner-img {
-        background: #ffffff;
-    }
-    .banner-text-container {
-        margin: 1rem;
-    }
-    .banner-text-container h1 {
-        font-size: 20px;
-        color: #000;
-    }
+
+  .month {
+    grid-row: 1;
+  }
+
+  .six-8 {
+    page-break-before: always;
+  }
+
     main {
         display: block;
         position: absolute;
         top: 10px;
     }
-    p, .quote, .cite-quote {
+    p {
         font-size: 14px;
     }
     h2 {
@@ -202,11 +184,6 @@ body {font-family: Verdana, sans-serif;}
     }
     h3 {
         font-size: 16px;
-    }
-
-    .left-side, .right-side {
-        width: 100%;
-        margin: 0;
     }
   }
 
