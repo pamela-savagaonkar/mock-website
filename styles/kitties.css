@@ -59,63 +59,12 @@ body {font-family: Verdana, sans-serif;}
   width: 70%;
 }
 
-@media screen and (max-width: 1200px) {
-  .header a {
-    position: relative;
-    top: -150px;
-    right: 0;
-    left: 0;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }}
-
-
-
-  @media screen and (min-width: 600px) {
-    .responsive-img {
-      width: 600px;
-    }
-    
-    .responsive-img {
-      float: none;
-    }}
-
-
-    @media screen and (max-width: 600px) {
-      table {
-        width: 200px;
-      }
-      
-      .month {
-        width: 500px;
-      }
-      .days {
-        width: 500px;
-      }
-
-      .active {
-        width: 500px;
-      }
-    }
-
-
-@media all and (max-width: 800px) {
-  .three {
-    display: none;}
-  .four {
-    display: none;}
-}
-
-
 
 .footer {
   grid-column: 1 / span 12;
   width: 100%;
   height: 350px; 
+  bottom: 0;
   background-position: bottom;
   background-size: cover;
   background-image: url(../images/lesson04-mock4-footer-image.jpg);
@@ -192,6 +141,148 @@ body {font-family: Verdana, sans-serif;}
   background: linear-gradient(to left, rgb(78, 147, 162), white);
 }
 
+/*
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+/*
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+*/
+
+
+/*PRINT CODE*/
+  @media print {
+    body {
+        margin: 0;
+        color: #000;
+        background: #ffffff;
+    }
+    .header, .cat-logo, .footer, .header-right {
+        display: none;
+    }
+
+    .three
+
+  {grid-row: 1;
+
+  }
+
+  .four {
+    grid-row: 2;
+
+  }
+    .banner-img {
+        background: #ffffff;
+    }
+    .banner-text-container {
+        margin: 1rem;
+    }
+    .banner-text-container h1 {
+        font-size: 20px;
+        color: #000;
+    }
+    main {
+        display: block;
+        position: absolute;
+        top: 10px;
+    }
+    p, .quote, .cite-quote {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .header a {
+      position: relative;
+      top: -150px;
+      right: 0;
+      left: 0;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }}
+
+    @media screen and (min-width: 600px) {
+      .responsive-img {
+        width: 600px;
+      }
+      
+      .responsive-img {
+        float: none;
+      }}
+  
+  
+      @media screen and (max-width: 600px) {
+        .table {
+          width: 500px;
+        }
+        
+        .month {
+          width: 500px;
+        }
+        .days {
+          width: 500px;
+        }
+  
+        .active {
+          width: 500px;
+        }
+      }
+  
+  
+  
+  /* viewing smaller than tablet in portrait */
+  @media only screen and (max-width: 821px) {
+    .three {
+        display: none;
+    }
+    .four {
+      display: none;
+  }
+  .six-8 {
+    grid-column: 1 / span 12;
+  grid-row: 3;
+  }
+  .month {align-content: center;
+    justify-content: center;
+  }
+}
+
+  /* viewing smaller than tablet in landscape */
+  @media only screen and (orientation: landscape) and (max-width: 821px) {
+    .three {
+        display: none;
+    }
+    .four {
+      display: none;
+  }
+  .six-8 {
+    grid-column: 1 / span 12;
+  grid-row: 3;
+  }}
+
 
 .roboto-regular {
     font-family: "Roboto", sans-serif;
@@ -212,9 +303,6 @@ body {font-family: Verdana, sans-serif;}
   a {
     color:#4fabc3;
   }
-
-
-
 
   .container {
     height: 300px;
@@ -287,9 +375,10 @@ body {font-family: Verdana, sans-serif;}
 
 
   .month {
+    padding-top: 40px;
     grid-column: 3 / auto;
     grid-row: 2;
-    width: 300px;
+    width: 500px;
     background: #4e93a2;
     text-align: center;
   }
@@ -346,4 +435,3 @@ body {font-family: Verdana, sans-serif;}
     background: #4e93a2;
     color: white 
   }
-
