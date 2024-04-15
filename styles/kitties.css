@@ -171,6 +171,10 @@ body {font-family: Verdana, sans-serif;}
     page-break-before: always;
   }
 
+  .six {
+    page-break-before: always;
+  }
+
     main {
         display: block;
         position: absolute;
@@ -184,6 +188,10 @@ body {font-family: Verdana, sans-serif;}
     }
     h3 {
         font-size: 16px;
+    }
+
+    .video1 {
+      display: none;
     }
   }
 
